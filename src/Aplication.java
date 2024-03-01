@@ -52,14 +52,14 @@ public class Aplication {
 
         }
 
-       ChampionServices services = new ChampionServices(championList);
+       ChampionServices championServices = new ChampionServices(championList);
 
         System.out.print("Quantos turnos você deseja executar? ");
         int n = sc.nextInt();
 
         System.out.println();
 
-        services.process(n);
+        championServices.fight(n);
 
         sc.close();
 
